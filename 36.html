@@ -1,0 +1,14 @@
+<!-- The first line contains a single integer T — the number of test cases. Then the test cases follow.
+The first and only line of each test case contains two space-separated integers 
+N and X — the total number of cards and the number of cards which are initially face-up. -->
+# Read number of test cases
+T = int(input())
+
+for i in range(T):
+    N, X = map(int, input().split())
+    
+    face_down = N - X
+    
+    result = min(X, face_down)
+    
+    print(result)

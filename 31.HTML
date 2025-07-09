@@ -1,0 +1,16 @@
+<!-- The current score is 
+1:5. If team 
+2 more goals, the score will become 
+3:5 is a poSsible score.The first line contains a single integer T - the number of test cases. Then the test cases follow.
+The first line of each test case contains two integers 
+A andB - the intial number of goals team 2 have scored respectively. -->
+
+# cook your dish here
+T = int(input())
+for _ in range(T):
+    A, B ,C, D= map(int, input().split())
+    C, D = map(int, input().split())
+    if C >= A and D >= B:
+        print("POSSIBLE")
+    else:
+        print("IMPOSSIBLE")

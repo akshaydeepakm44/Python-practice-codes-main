@@ -1,0 +1,11 @@
+<!-- The first line of input will contain a single integer T, denoting the number of test cases.
+Each test case consists of three space-separated integers X,Y, and Z, as mentioned in the statement. -->
+
+T = int(input())
+for i in range(T):
+    X, Y, Z = map(int, input().split())
+    total_students = X * Y
+    if 2 * Z > total_students:
+        print("YES")
+    else:
+        print("NO")

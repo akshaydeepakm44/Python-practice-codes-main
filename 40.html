@@ -1,0 +1,6 @@
+<!-- Write a Python program to find common elements in multiple lists. -->
+def common_elements(lists):
+return list(set(lists[0]).intersection(*lists[1:]))
+
+lists = [[1, 2, 3], [2, 3, 4], [3, 4, 5]]
+print("Common elements:", common_elements(lists))

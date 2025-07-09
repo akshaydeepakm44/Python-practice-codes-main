@@ -1,0 +1,9 @@
+<!-- First line will contain T, number of test cases. Then the test cases follow.
+Each test case contains of a single line of input, three integers A,B, and C denoting the distances in each throw. -->
+# Number of test cases
+T = int(input())
+for i in range(T):
+    A, B, C = map(int, input().split())
+    final_score = max(A, B, C)
+    
+    print(final_score)

@@ -1,0 +1,15 @@
+<!-- Chefland requires 
+A=1 units of power for the next 
+B=2 years. In total, the moon must be capable of providing 
+A⋅B=2 units of power. There are in total 
+X=3 grams of Helium-3 on the moon which is capable of providing 
+X⋅Y=12 units of power. 12>2, so the project satisfies the minimum requirements for funding. Thus, the answer is Yes. -->
+
+T = int(input())
+
+for i in range(T):
+    A, B, X, Y = map(int, input().split())
+    if A * B > X * Y:
+        print("NO")
+    else:
+        print("YES")

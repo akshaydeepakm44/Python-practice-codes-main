@@ -1,0 +1,18 @@
+<!-- Chef wants to reach home as soon as possible. He has two options:
+
+Travel with his BIKE which takes X
+X minutes.
+Travel with his CAR which takes Y
+Y minutes.
+Which of the two options is faster or do they both take same time?
+ -->
+
+ T = int(input())
+for _ in range(T):
+    X, Y = map(int, input().split())
+    if X < Y:
+        print("BIKE")
+    elif X > Y:
+        print("CAR")
+    else:
+        print("SAME")

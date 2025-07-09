@@ -1,0 +1,20 @@
+<!-- First line will contain 
+T, the number of test cases. Then the test cases follow.
+Each test case contains a single line of input, containing two space-separated integers 
+N and Xrepresenting the number of people at the party and the number of available tiles respectively.
+Output Format
+For each test case, output in a single line YES if the game is valid, else output 
+NO.
+You may print each character of the string in uppercase or lowercase (for example, the strings 
+YES will all be treated as identical). -->
+
+T = int(input())  # Read number of test cases
+
+for _ in range(T):  # Loop through each test case
+    N, X = map(int, input().split())  # Read N (number of players) and X (number of tiles)
+    
+    # Check if X is divisible by N
+    if X % N == 0:
+        print("YES")
+    else:
+        print("NO")

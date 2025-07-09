@@ -1,0 +1,12 @@
+<!-- The first line of input will contain a single integer T, denoting the number of test cases.
+The first line and only line of each test case contains four space-separated integers P, Q, R and S — the profits made by companies A, B, C and D respectively. -->
+
+T = int(input())  
+
+for i in range(T):  
+    P, Q, R, S = map(int, input().split())  
+    
+    if P > Q + R + S or Q > P + R + S or R > P + Q + S or S > P + Q + R:
+        print("YES")  
+    else:
+        print("NO")  

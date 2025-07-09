@@ -1,0 +1,18 @@
+<!-- There are N
+N children and Chef wants to give them 1
+1 candy each. Chef already has X
+X candies with him. To buy the rest, he visits a candy shop. In the shop, packets containing exactly 4
+4 candies are available.
+Determine the minimum number of candy packets Chef must buy so that he is able to give 1
+1 candy to each of the N
+N children.
+ -->
+T = int(input())
+for _ in range(T):
+    N, X = map(int, input().split())
+    remaining = N - X
+    if remaining <= 0:
+        print(0)
+    else:
+       packets = (remaining + 3) // 4
+        print(packets)

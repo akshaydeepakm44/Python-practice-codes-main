@@ -1,0 +1,47 @@
+<!-- print odd numbers from user input range -->
+
+def print_odd_numbers(start, end):
+    odd_numbers = [num for num in range(start, end + 1) if num % 2 != 0]
+    return odd_numbers
+
+
+def odd(a,n):
+    for i in range(a, n +1):
+        if i %2 != 0:
+        print(i, end=' ')
+
+<!-- print factors -->
+def print_factors(n):
+    factors = [i for i in range(1, n + 1) if n % i == 0]
+    return factors
+
+def factors(n):
+    for i in range(1, n + 1):
+        if n % i == 0:
+            print(i, end=' ')
+            
+            
+<!-- write a program that prints a string by joining the char of each index of indices   -->
+
+def join_at_indices(s, indices):
+    result = ''
+    for i in indices:
+        if i < len(s):
+            result += s[i]
+    return result    
+
+
+<!-- program to count large numbers in a list -->
+<!-- count large numbers in a list -->  
+    def large_numbers(numbers):
+    count = 0
+    for i in numbers:
+        if abs(i) >= 1000:
+            count += 1
+    return count
+
+n = int(input("Enter number of elements: "))
+numbers = list(map(int, input("Enter the numbers: ").split()))
+
+result = large_numbers(numbers)
+print(result)

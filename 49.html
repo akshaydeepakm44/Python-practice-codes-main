@@ -1,0 +1,12 @@
+<!-- Find minimum and maximum values from a list of numbers and return their difference using args. -->
+
+def find_range(*args):
+    return max(args) - min(args)
+
+nums = input().split()
+
+nums = [float(x) for x in nums]
+
+result = find_range(*nums)
+
+print(int(result) if result.is_integer() else result)

@@ -1,0 +1,32 @@
+Print 1 to n:________________
+
+def rec_num(n,i=1)
+
+if i>n:
+return
+print(i)
+print rec_num(n,i+1)
+
+
+Sum of first n natural numbers:_________
+
+def sum_n(n):
+    return n * (n + 1) // 2 
+
+recursive method:
+ 
+def sum_n(n):
+    if n <= 0:
+return 0
+return n +sum_n(n-1)
+
+
+reverse number in recursion:_______________
+
+def reverse_num(n, rev=0):
+    if n == 0:
+        return rev
+    rev = rev * 10 + n % 10
+    return reverse_num(n // 10, rev)
+
+    

@@ -1,0 +1,69 @@
+<!-- Traversing -->
+
+
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+class Linkedlist:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+        self.length = 0
+  
+def append(self, value):
+    new_node = Node(value)
+    if self.head is None:
+        self.head = new-node
+        self.tail = new_node
+    else:
+        self.tail.next = new_node
+        self.tail = new_node
+    self.length += 1
+ 
+def preppend(self, value):
+    new_node = Node(value)
+    if self.head is None:
+        self.head = new_node
+        self.tail = new_node
+    else:
+        new_node.next = self.head
+        self.head = new_node
+    self.length += 1
+    
+def insert(self,value,index):
+    new_node = Node(value)
+    if index < 0 or index > self.length:
+        print("Index out of bounds")
+    elif self.head is None:
+        self.head = new_node
+        slef.tail = new_node
+    elif index == 0:
+        new_node.next = self.head
+        self.head = new_node
+    else:
+        temp_node = self.head
+        for _ in range(index - 1):
+            temp_node = temp_node.next  
+        new_node.next = temp_node.next
+        temp_node.next = new_node
+    self.length += 1
+    return result
+    
+    
+def travese(self):
+    current_node = self.head
+    while current is not None:
+        print(current_node.value)
+        current_node = current_node.next    
+
+
+def __str__(self):
+    temp_node = self.head   
+    result = ''
+    while temp_node is not None:
+        result += str(temp_node.value)
+        if temp_node.next is not None:
+            result += '->'
+        temp_node = temp_node.next

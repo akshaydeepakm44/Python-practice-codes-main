@@ -1,4 +1,13 @@
 <!-- remove element in Linkedlist -->
 
 def remove(self,index):
-  
+    if index < 0 or index >= self.size:
+        return None
+    if index == 0:
+        self.head = self.head.next
+    else:
+        current = self.head
+        for i in range(index - 1):
+            current = current.next
+        current.next = current.next.next
+    self.length -= 1

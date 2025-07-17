@@ -1,0 +1,13 @@
+
+<!-- write a program to print the indices of two numbers in a list that differ up to a given number. -->
+
+n = int(input())
+ b = list(map(int, input() .split()))
+ c = int(input())
+s = {}
+for i in range(n):
+diff = c - b[i]
+if diff in s:
+print(s[diff], i)
+break
+s[b[i]] = i

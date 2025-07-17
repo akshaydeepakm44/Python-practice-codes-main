@@ -1,0 +1,31 @@
+<!-- given a string  and list of substrings , remove all occurrences of these substringd from s. -->
+
+s= input()
+sub_str = input().split()
+for i in sub_str:
+s=s.replace(i,"")
+print(s)
+
+
+
+
+<!-- write a program to pritn the second largest elements  -->
+n=input()
+max = 0
+for i in n:
+    if (n.count(i)>max):
+        max=n.count(i)
+print(len(n) - max)
+
+
+<!-- camel case to snake case -->
+ n=input("camelcase:")
+ s=""
+ for i in  n:
+ if(i.isupper()):
+ if (s!=""):
+ s+=" "
+ s += "_" + i.lower() 
+ else:
+ s+=i
+print(s)

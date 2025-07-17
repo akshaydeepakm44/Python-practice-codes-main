@@ -1,0 +1,16 @@
+<!-- pop of element in linked list  -->
+
+def pop(self):
+    if self.head is None:
+        print("List is empty")
+        return None
+
+    popped_node = self.head
+    self.head = self.head.next
+    popped_node.next = None
+    self.length -= 1
+
+    if self.head is None:  # If the list becomes empty
+        self.tail = None
+
+    return popped_node.value
